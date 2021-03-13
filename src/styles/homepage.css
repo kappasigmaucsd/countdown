@@ -1,21 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
 .header{
     padding: 20px;
     color: white;
-    background: red;
+    background: #bd120b;
 }
 
 .body{
+    float: left;
+    width: 20%;
     text-align: center;
+    background-color: antiquewhite;
+}
 
+.main{
+    overflow: auto;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .footer {
-    font-size: larger;
+    font-size: 20px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
     padding: 10px;
-    background-color: #FAEBD7;
+    color: white;
+    background-color: #076813;
+}
+
+.executive {
+    font-size: 50px;
+}
+
+/* link stuff */
+.links {
+    left: 50px;
+    bottom: 500px;
+    width: 100%;
+    position: fixed;
+    float: top;
+}
+
+/* Resizing for different screens */
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+        width: 80%;
+        padding: 0;
+    }
+    .footer {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .main, .footer {
+        width: 100%;
+    }
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 822;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
