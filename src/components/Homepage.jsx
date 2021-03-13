@@ -3,8 +3,15 @@ import '../styles/homepage.css'
 
 import Tabs from "./TabGroup";
 import Timer from "./Timer";
+
 import crest from '../img/crest.png'
 import net from '../img/ks_net_logo-1.png'
+import profile from '../img/Circle_Logo.png'
+import clip from '../img/Covid_Hype.mp4'
+
+import ig from '../img/ig.png'
+import fb from '../img/fb.png'
+import yt from '../img/yt.png'
 
 class Homepage extends React.Component {
     constructor() {
@@ -15,13 +22,19 @@ class Homepage extends React.Component {
         return (
             <div>
                 <div className="header">
-                    <h1>Kappa Sigma</h1>
+                    <img src={profile} width="150"/>
                 </div>
 
                 <div className="main">
                     <Tabs>
                         <div label="Homepage">
-                            Kappa Sigma, UCSD
+                            <video autoPlay loop muted>
+                                <source src={clip} type="video/mp4"/>
+                                test
+                            </video>
+                        </div>
+                        <div label="About">
+                            Something about  our values blah blah blah
                         </div>
                         <div label="Rush">
                             <Timer/>
@@ -33,6 +46,25 @@ class Homepage extends React.Component {
                             yes
                         </div>
                     </Tabs>
+
+                    <div className="links">
+                        <div className="column">
+                            <a href="https://www.instagram.com/kappasigmaucsd/">
+                                <img src={ig} width="70"/>
+                            </a>
+                        </div>
+                        <div className="column">
+                            <a href="https://www.facebook.com/ucsdkappasig/">
+                                <img src={fb} width="50"/>
+                            </a>
+                        </div>
+                        <div className="column">
+                            <a href="https://www.youtube.com/channel/UCB_P3xornSa5kcIry7kJI5g">
+                                <img src={yt} width="65"/>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
                 {/*

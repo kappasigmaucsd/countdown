@@ -74,7 +74,7 @@ class Timer extends React.Component {
     render() {
         return(
             <div className = "timer">
-                Days: {this.state.time.d} Hours: {this.state.time.h} Minutes: {this.state.time.m} Seconds: {this.state.time.s}
+                {this.state.time.d}D {this.state.time.h}H {this.state.time.m}M {this.state.time.s}S
             </div>
         );
     }

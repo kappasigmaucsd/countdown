@@ -1,6 +1,7 @@
 .tab-list {
     border-bottom: 1px solid #ccc;
     padding-left: 0;
+    background-color: #bd120b;
 }
 
 .tab-list-item {
@@ -8,10 +9,11 @@
     list-style: none;
     margin-bottom: -1px;
     padding: 0.5rem 0.75rem;
+    color: white;
 }
 
 .tab-list-active {
-    background-color: white;
-    border: solid #ccc;
+    background-color: #076813;
+    border: solid #ccc82d;
     border-width: 1px 1px 0 1px;
 }
